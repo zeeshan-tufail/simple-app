@@ -38,7 +38,7 @@ env:
   REGISTRY: quay.io/shani1
   # ⬇️ EDIT with your registry username.
   REGISTRY_USER: shani1
-  REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+  # REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
 
   # ⬇️ EDIT to log into your OpenShift cluster and set up the context.
   # See https://github.com/redhat-actions/oc-login#readme for how to retrieve these values.
@@ -133,7 +133,7 @@ jobs:
         tags: ${{ steps.image-build.outputs.tags }}
         registry: ${{ env.REGISTRY }}
         username: ${{ env.REGISTRY_USER }}
-        password: ${{ env.REGISTRY_PASSWORD }}
+        password: "Shani@123" # ${{ env.REGISTRY_PASSWORD }}
 
     # The path the image was pushed to is now stored in ${{ steps.push-to-registry.outputs.registry-path }}
 
