@@ -56,7 +56,7 @@ env:
   TAG: ""
 
 
-on: [push, workflow_dispatch]
+on: [workflow_dispatch] #push,
 
 jobs:
   openshift-ci-cd:
