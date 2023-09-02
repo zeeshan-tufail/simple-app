@@ -37,7 +37,7 @@ env:
   # ⬇️ EDIT with your registry and registry path.
   REGISTRY: quay.io/shani1
   # ⬇️ EDIT with your registry username.
-  REGISTRY_USER: shani1
+  REGISTRY_USER: shani1+shani
   REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
 
   # ⬇️ EDIT to log into your OpenShift cluster and set up the context.
